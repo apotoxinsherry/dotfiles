@@ -1,4 +1,4 @@
-<p align="center"><b>IMPORTANT:</b> Those who are looking for the old rice, it is on the worm branch, <a href="https://github.com/syndrizzle/hotfiles/tree/worm">click here</a> to check it out. </p>
+Edited Syndrizzle's hotfiles to suit my laptop. 
 
 <img alt="picture 2" src="https://i.imgur.com/hrNbdfD.gif" />  
 <p align="center"><a href="#installation"><img alt="picture 2" src="https://i.imgur.com/Y7PKn7x.png" width="220"/></a><a href="#gallery"><img alt="picture 3" src="https://i.imgur.com/i9rmhBC.png" width="220"/></a><a href ="#support"><img alt="picture 1" src="https://i.imgur.com/LLIkH4D.png" width="220"/></a><a href="#credits"><img alt="picture 5" src="https://i.imgur.com/QA23l5X.png" width="220"/></a><a href="#tips"><img alt="picture 4" src="https://i.imgur.com/cg3KPZc.png" width="220"/></a></p>
