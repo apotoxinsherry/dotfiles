@@ -102,18 +102,18 @@ all() {
 help() {
   echo "Usage: ./install.sh [options]"
   echo
-  echo "  --swaync          copies configs for swaync"
-  echo "  --tmux            copies configs for tmux"
-  echo "  --waybar          copies configs for waybar"
-  echo "  --wlogout         copies configs for wlogout"
-  echo "  --spicetify       copies configs for spicetify"
-  echo "  --rofi            copies configs for rofi"
-  echo "  --gtk             copies the gtk theme and its icons into your home folder"
-  echo "  --neofetch        copies configs for neofetch"
-  echo "  --hyprland        copies configs for hyprland"
-  echo "  --discord         copies configs for BetterDiscord"
-  echo "  --all             installs the necessary packages and copies all available configs"
-  echo "  --packages-only   installes the necessary packages alone without copying the config files"
+  echo "  --swaync          Copies configs for swaync"
+  echo "  --tmux            Copies configs for tmux"
+  echo "  --waybar          Copies configs for waybar"
+  echo "  --wlogout         Copies configs for wlogout"
+  echo "  --spicetify       Copies configs for spicetify"
+  echo "  --rofi            Copies configs for rofi"
+  echo "  --gtk             Copies the gtk theme and its icons into your home folder"
+  echo "  --neofetch        Copies configs for neofetch"
+  echo "  --hyprland        Copies configs for hyprland"
+  echo "  --discord         Copies configs for BetterDiscord"
+  echo "  --all             Installs the necessary packages and copies all available configs"
+  echo "  --packages-only   Installs the necessary packages alone without copying the config files"
 }
 
 
