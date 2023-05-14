@@ -16,10 +16,18 @@ install_packages() {
     yay -S --noconfirm hyprland
   fi
 
-  yay -S --noconfirm tmux cmatrix galendae-git grim \
-    neovim imagemagick feh grub-customizer \
+  yay -S --noconfirm tmux cmatrix zsh galendae-git grim \
+    neovim imagemagick feh grub-customizer zsh-theme-powerlevel10k-git \
     ttf-meslo-nerd-font-powerlevel10k zsh rofi-ibonn-wayland polkit-kde-agent xdg-desktop-portal-hyprland cliphist udiskie \
     otf-font-awesome noto-fonts-emoji gtk4 blueberry hyprpaper montserrat-ttf obsidian nm-applet gnome-keyring
+
+  echo "Installing Oh-my-Zsh"
+
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+
+
 
 }
 
@@ -85,6 +93,8 @@ tmux() {
 }
 
 all() {
+  echo "Installing Packages"
+  install_packages
   echo "Copying all available configurations"
   cp -ra ./. ~/
 }
@@ -103,6 +113,7 @@ help() {
   echo "  --hyprland    copies configs for hyprland"
   echo "  --discord     copies configs for BetterDiscord"
   echo "  --all         copies all available configs"
+  echo "This script automatically installes the required packages only for the --all flag. For others, it is assumed that you have the necessary packages installed"
 }
 
 
