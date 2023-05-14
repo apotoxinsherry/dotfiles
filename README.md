@@ -86,7 +86,7 @@ The default super key is `Win` Key. Change it in `.config/hypr/configs/keybinds.
 | Clipboard | `Super + V` |
  
 # Screenshots
-![screenshot-1](screenshots/Screenshot-1.png)
+![screenshot-1](https://raw.githubusercontent.com/apotoxinsherry/dotfiles/master/screenshots/Screenshot-1.png)
 ![screenshot-2](screenshots/Screenshot-2.png)
 ![screenshot-3](screenshots/Screenshot-3.png)
 ![screenshot-4](screenshots/Screenshot-4.png)
