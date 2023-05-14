@@ -16,7 +16,7 @@ install_packages() {
     yay -S --noconfirm hyprland
   fi
 
-  yay -S --noconfirm tmux cmatrix zsh galendae-git grim \
+  yay -S --noconfirm --needed tmux cmatrix zsh galendae-git grim \
     neovim imagemagick feh grub-customizer zsh-theme-powerlevel10k-git \
     ttf-meslo-nerd-font-powerlevel10k zsh rofi-ibonn-wayland polkit-kde-agent xdg-desktop-portal-hyprland cliphist udiskie \
     otf-font-awesome noto-fonts-emoji gtk4 blueberry hyprpaper montserrat-ttf obsidian nm-applet gnome-keyring
@@ -102,25 +102,25 @@ all() {
 help() {
   echo "Usage: ./install.sh [options]"
   echo
-  echo "  --swaync      copies configs for swaync"
-  echo "  --tmux        copies configs for tmux"
-  echo "  --waybar      copies configs for waybar"
-  echo "  --wlogout     copies configs for wlogout"
-  echo "  --spicetify   copies configs for spicetify"
-  echo "  --rofi        copies configs for rofi"
-  echo "  --gtk         copies the gtk theme and its icons into your home folder"
-  echo "  --neofetch    copies configs for neofetch"
-  echo "  --hyprland    copies configs for hyprland"
-  echo "  --discord     copies configs for BetterDiscord"
-  echo "  --all         copies all available configs"
-  echo "This script automatically installes the required packages only for the --all flag. For others, it is assumed that you have the necessary packages installed"
+  echo "  --swaync          copies configs for swaync"
+  echo "  --tmux            copies configs for tmux"
+  echo "  --waybar          copies configs for waybar"
+  echo "  --wlogout         copies configs for wlogout"
+  echo "  --spicetify       copies configs for spicetify"
+  echo "  --rofi            copies configs for rofi"
+  echo "  --gtk             copies the gtk theme and its icons into your home folder"
+  echo "  --neofetch        copies configs for neofetch"
+  echo "  --hyprland        copies configs for hyprland"
+  echo "  --discord         copies configs for BetterDiscord"
+  echo "  --all             installs the necessary packages and copies all available configs"
+  echo "  --packages-only   installes the necessary packages alone without copying the config files"
 }
 
 
 
 
 
-options=$(getopt -o "" --long all,swaync,tmux,waybar,wlogout,spicetify,rofi,gtk,neofetch,discord,hyprland: -n 'script.sh' -- "$@")
+options=$(getopt -o "" --long all,swaync,tmux,waybar,wlogout,spicetify,rofi,gtk,neofetch,discord,hyprland,packages-only: -n 'script.sh' -- "$@")
 if [[ $# -lt 1 ]]
 then
   help
@@ -137,6 +137,9 @@ else
         ;;
       --tmux)
         tmux
+        ;;
+      --packages-only)
+        install_packages
         ;;
       --waybar)
         waybar
