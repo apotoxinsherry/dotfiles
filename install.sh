@@ -31,6 +31,11 @@ install_packages() {
 
 }
 
+swaylock() {
+  echo "Copying swaylock configurations"
+  cp -r .config/swaylock ~/.config/
+}
+
 discord() {
   echo "Copying BetterDiscord configurations"
   cd .config || exit
@@ -103,6 +108,7 @@ help() {
   echo "Usage: ./install.sh [options]"
   echo
   echo "  --swaync          Copies configs for swaync"
+  echo "  --swaylock        Copies configs for swaylock"
   echo "  --tmux            Copies configs for tmux"
   echo "  --waybar          Copies configs for waybar"
   echo "  --wlogout         Copies configs for wlogout"
@@ -120,7 +126,7 @@ help() {
 
 
 
-options=$(getopt -o "" --long all,swaync,tmux,waybar,wlogout,spicetify,rofi,gtk,neofetch,discord,hyprland,packages-only: -n 'script.sh' -- "$@")
+options=$(getopt -o "" --long all,swaync,swaylock,tmux,waybar,wlogout,spicetify,rofi,gtk,neofetch,discord,hyprland,packages-only: -n 'script.sh' -- "$@")
 if [[ $# -lt 1 ]]
 then
   help
@@ -164,6 +170,9 @@ else
         ;;
       --hyprland)
         hyprland
+        ;;
+      --swaylock)
+        swaylock
         ;;
     esac
     shift

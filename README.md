@@ -26,7 +26,7 @@ Dotfiles for my Arch Linux setup. :cherry_blossom:
     yay -S --noconfirm hyprland-nvidia cava tmux cmatrix galendae-git grim neovim \
     imagemagick feh ttf-meslo-nerd-font-powerlevel10k zsh rofi-ibonn-wayland polkit-kde-agent xdg-desktop-portal-hyprland \
     cliphist udiskie noisetorch otf-font-awesome noto-fonts-emoji gtk4 blueberry \
-    hyprpaper montserrat-ttf nm-applet gnome-keyring
+    hyprpaper montserrat-ttf nm-applet gnome-keyring swayidle swaylock-effects
   ```
   Also add `WLR_NO_HARDWARE_CURSORS=1` to your `/etc/environment`
   
@@ -36,7 +36,7 @@ Dotfiles for my Arch Linux setup. :cherry_blossom:
     yay -S --noconfirm hyprland cava tmux cmatrix galendae-git grim neovim \
     imagemagick feh ttf-meslo-nerd-font-powerlevel10k zsh rofi-ibonn-wayland polkit-kde-agent xdg-desktop-portal-hyprland \
     cliphist udiskie noisetorch otf-font-awesome noto-fonts-emoji gtk4 blueberry \
-    hyprpaper montserrat-ttf nm-applet gnome-keyring
+    hyprpaper montserrat-ttf nm-applet gnome-keyring swayidle swaylock-effects
   ```
   
   
@@ -84,6 +84,7 @@ The default super key is `Win` Key. Change it in `.config/hypr/configs/keybinds.
 | Toggle floating | `Super + S` |
 | Screenshot | `Super + Shift + S`|
 | Clipboard | `Super + V` |
+| Toggle fullscreen | `Super + F` |
  
 # Screenshots
 ![screenshot-1](https://raw.githubusercontent.com/apotoxinsherry/dotfiles/master/screenshots/Screenshot-1.png)
