@@ -54,6 +54,7 @@ Dotfiles for my Arch Linux setup. :cherry_blossom:
   Usage: ./install.sh [options]
 
   --swaync          Copies configs for swaync
+  --swaylock        Copies configs for swaylock
   --tmux            Copies configs for tmux
   --waybar          Copies configs for waybar
   --wlogout         Copies configs for wlogout
